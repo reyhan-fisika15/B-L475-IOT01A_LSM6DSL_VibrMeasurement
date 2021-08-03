@@ -28,6 +28,9 @@ In this project I will use that sensor for measuring vibration based on linear a
 ![setup](https://user-images.githubusercontent.com/57849203/128018378-8dfddde6-cc35-4c48-a18d-7f4c740b32a3.jpg)
 
 ## Result
-Captured data using SerialPlot:
+Captured data using Visual C# and SerialPlot:
 ![gambar](https://user-images.githubusercontent.com/57849203/128017665-9f29a945-ce84-406e-94b4-f94f481f69e6.png)
+![gambar](https://user-images.githubusercontent.com/57849203/128030504-4d20613c-06b9-4bb1-8e99-efbd29be828f.png)
+
+Video link:
 
