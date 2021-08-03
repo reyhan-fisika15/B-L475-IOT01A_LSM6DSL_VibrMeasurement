@@ -63,9 +63,9 @@ PCD_HandleTypeDef hpcd_USB_OTG_FS;
 
 /* USER CODE BEGIN PV */
 short int pAccelData[3];
-float iAccelValX = 0;    // Accelerometer value in X-axis
-float iAccelValY = 0;    // Accelerometer value in Y-axis
-float iAccelValZ = 0;	 // Accelerometer value in Z-axis
+short int iAccelValX = 0;    // Accelerometer value in X-axis
+short int iAccelValY = 0;    // Accelerometer value in Y-axis
+short int iAccelValZ = 0;	 // Accelerometer value in Z-axis
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -151,13 +151,13 @@ int main(void)
 	// Begin processing
 	BSP_ACCELERO_AccGetXYZ(pAccelData);
 
-	// Fetch each axis data and calculate linear acceleration
-	iAccelValX = (float)pAccelData[0] / 32768.0f * 2.0f;
-	iAccelValY = (float)pAccelData[1] / 32768.0f * 2.0f;
-	iAccelValZ = (float)pAccelData[2] / 32768.0f * 2.0f;
+	// Fetch each axis data
+	iAccelValX = pAccelData[0];
+	iAccelValY = pAccelData[1];
+	iAccelValZ = pAccelData[2];
 
 	// Format into string
-	snprintf(str_tmp, 64, "%.2f,%.2f,%.2f\r\n", iAccelValX, iAccelValY, iAccelValZ);
+	snprintf(str_tmp, 64, "%d,%d,%d\r\n", iAccelValX, iAccelValY, iAccelValZ);
 
 	// Send to PC
 	HAL_UART_Transmit(&huart1, (unsigned char*)str_tmp, strlen(str_tmp), 1000);
