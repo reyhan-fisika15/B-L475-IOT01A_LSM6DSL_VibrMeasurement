@@ -25,8 +25,9 @@ In this project I will use that sensor for measuring vibration based on linear a
 - B-L475E-IOT01A BSP (Board Support Package)
 
 ## Hardware Setup
-TODO
+![setup](https://user-images.githubusercontent.com/57849203/128018378-8dfddde6-cc35-4c48-a18d-7f4c740b32a3.jpg)
 
-## Software
-Here is the preview of Visual C# app used for displaying vibration data.
-<image here>
+## Result
+Captured data using SerialPlot:
+![gambar](https://user-images.githubusercontent.com/57849203/128017665-9f29a945-ce84-406e-94b4-f94f481f69e6.png)
+
