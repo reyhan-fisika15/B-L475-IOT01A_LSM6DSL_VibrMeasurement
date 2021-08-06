@@ -20,9 +20,9 @@ In this project I will use that sensor for measuring vibration based on linear a
 - Power supply
 
 ## Software
-- STM32CubeIDE
+- RT-Thread Studio
 - Visual Studio 2019
-- B-L475E-IOT01A BSP (Board Support Package)
+- B-L475E-IOT01A BSP (Board Support Package) and Latest RT-Thread RTOS
 
 ## Hardware Setup
 ![setup](https://user-images.githubusercontent.com/57849203/128018378-8dfddde6-cc35-4c48-a18d-7f4c740b32a3.jpg)
